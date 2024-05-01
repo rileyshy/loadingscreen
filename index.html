@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- YouTube Video Container -->
+    <div id="video-container">
+        <!-- Embedded YouTube Video -->
+        <iframe id="youtube-video" width="100%" height="100%" src="https://www.youtube.com/embed/736xqx7FmaU?autoplay=1&controls=1&loop=1&playlist=736xqx7FmaU" frameborder="0" allow="autoplay; fullscreen"></iframe>
+    </div>
+
+    <!-- Your Name Text -->
+    <div id="loading-text">Your Name</div>
+
+    <!-- Logo image -->
+    <img id="logo" src="img/logo.png" alt="Logo">
+
+    <!-- More Information Button -->
+    <div id="more-info">
+        <button class="button" onclick="openModal()">More Information</button>
+    </div>
+
+    <!-- Pause Button -->
+    <div id="pause-control">
+        <button class="button" onclick="pauseVideo()">Pause</button>
+    </div>
+
+    <!-- Play Button -->
+    <div id="play-control">
+        <button class="button" onclick="playVideo()">Play</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Our Staff Team</h2>
+            <div class="staff">
+                <img src="img/discord.png" alt="Discord Logo">
+                <p>John Doe</p>
+            </div>
+            <div class="staff">
+                <img src="img/discord.png" alt="Discord Logo">
+                <p>Jane Doe</p>
+            </div>
+            <div class="staff">
+                <img src="img/discord.png" alt="Discord Logo">
+                <p>Bob Smith</p>
+            </div>
+            <div class="staff">
+                <img src="img/discord.png" alt="Discord Logo">
+                <p>Alice Johnson</p>
+            </div>
+            <div class="staff">
+                <img src="img/discord.png" alt="Discord Logo">
+                <p>Michael Brown</p>
+            </div>
+            <!-- Add more staff members as needed -->
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
